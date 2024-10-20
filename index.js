@@ -1,7 +1,13 @@
 //Counter App
+
+let clicks = document.getElementById("count-el")
+let saves = document.getElementById("save-txt")
+
 function increment(){
-    document.getElementById("count-el").innerText = parseInt(document.getElementById("count-el").innerText) + 1
+    clicks.innerText++
 }
+
 function save(){
-    document.getElementById("save-txt").innerText += document.getElementById("count-el").innerText + " - "
+    if (saves.innerText == "Previous Entries:") saves.innerText += ` ${clicks.innerText}`
+    else saves.innerText += ` - ${clicks.innerText}`
 }
