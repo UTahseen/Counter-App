@@ -18,7 +18,14 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        max-width: 70%;
+        max-width: 60%;
+    }
+    button{
+        width: 400px;
+        font-size: larger;
+    }
+    h2{
+        font-size: 100px;
     }
 }
     
